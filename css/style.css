@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    background-color: aqua;
+    background-image: url("../imgs/Curvey_02_Preview.jpg");
+    background-size: cover;
+    background-size: 100% auto;
+}
+body{
+    padding: 0px 30px 30px 30px;
+    background-color: white;
+    min-width: 566px;
+    max-width: 700px;
+    margin:  auto;
+    width: 80%;
+    background-color: cornflowerblue;
+
+}
+#hours,
+#minutes,
+#seconds,
+#milliseconds,
+#smaller{
+    background-color: white;
+}
+
+#flexbox{
+    display: flex;
+    max-width: 400px;
+
+}
+#flexbox2,
+#flexbox3{
+    display: flex;
+    margin-bottom: 15px;
+
+}
+
+#colorize{
+    transform: translateY(-20px) translateX(-55px);
+    /* transform: translateX(-20px); */
+    background-color: orange;
+}
+/*  reference list, not a used class  */
+.colorizeColors{
+    
+    background-color: aquamarine;
+    background-color: blueviolet;
+    background-color: cadetblue;
+    background-color: lightseagreen;
+    background-color: darkslategray;
+    background-color: darkturquoise;
+    background-color: deepskyblue;
+    background-color: darkseagreen;
+    background-color: darkcyan;
+    background-color: chartreuse;
+}
+#flexbox div{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding:  5px;
+    height: 100px;
+    width: 100px;
+    font-size: 2em;
+    border: black solid 2px;
+    border-collapse: collapse;
+}
+
+#flexbox2 div{
+    min-width: 30px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+#flexbox2 div:first-child{
+    text-align: unset;
+    margin-right: 10px;
+}
+#flexbox3 div:first-child{
+    margin-right: 20px;
+}
+#flexbox2 div:nth-child(3),
+#flexbox2 div:nth-child(5){
+    min-width: 10px;
+}
+
+#start_stop{
+    margin-top: 50px;
+    margin-left: 200px;
+    font-size: 1.5em;
+    height: 70px;
+    width: 100px;
+}
+/* great solution to button lack of mouseover feedback problem!!! */
+#start_stop:hover,
+#colorize:hover{
+ opacity: 80%;
+}
+#start_stop:active,
+#colorize:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+#buttonReset{
+    transform: translateY(20px);
+}
+#interval{
+    transform: translateY(20px) translateX(-50px);
+}
+.unclicked{
+    background-color: green;
+    color: white;
+}
+.clicked{
+    background-color: red;
+    color: black;
+}
+#flexbox #smaller{
+    height: 40px;
+    width: 50px;
+    justify-self: center;
+    align-self: center;
+    margin-left: auto;
+    font-size: 1em;
+    
+}

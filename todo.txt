@@ -1,0 +1,15 @@
+add smaller time display at bottom of the screen above the footer
+
+shows local time
+
+on a 1sec interval update all values displayed
+
+time.gethour time.getmin time.getsec
+
+date display underneath updated every minute 
+
+the time(interval updated persec): displayed in smaller bordered boxes like stopwatch
+
+the date(interval updated permin): displayed like xx/xx/xxxx
+
+project completed
